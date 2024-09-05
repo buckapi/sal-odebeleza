@@ -1,0 +1,15 @@
+.rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .score {
+    font-size: 1.2em;
+    margin-right: 5px;
+  }
+  
+  .star {
+    color: #ffcd00;
+    font-size: 2em;
+  }
+  
