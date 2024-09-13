@@ -4,15 +4,14 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="footer-logo mb-40 text-center"><a ><img
-                                src="assets/img/logo-white3.svg" alt="Rasm"></a></div>
+                                src="assets/img/logo.png" alt="Rasm"></a></div>
                     <ul class="footer-menu">
-                        <li><a>Home</a></li>
-                        <li><a>About Us</a></li>
-                        <li><a >Portfolio</a></li>
-                        <li><a >Pages</a></li>
-                        <li><a >Shop</a></li>
-                        <li><a >Blog</a></li>
-                        <li><a >Contact Us</a></li>
+                        <li class=""><a (click)="global.setRoute('home')" style="cursor: pointer;">COMEÇAR</a></li>
+                        <li class=""><a (click)="global.setRoute('about')" style="cursor: pointer;">LASHESTRINA</a></li>
+                        <li class="menu-item-has-children"><a (click)="global.setRoute('services')" style="cursor: pointer;">SERVIÇOS</a></li>
+                        <li class="menu-item-has-children mega-menu-wrap"><a (click)="global.setRoute('courses')" style="cursor: pointer;">CURSOS</a></li>
+                        <li><a (click)="global.setRoute('contact')" style="cursor: pointer;">LOCALIZAÇÃO E CONTACTO</a></li>
+                        
                     </ul>
                     <div class="widget footer-widget style2 mb-30">
                         <div class="th-widget-contact style2">
@@ -32,8 +31,8 @@
                     </div>
                     <div class="widget footer-widget mb-0">
                         <div class="th-social footer-social"><a href="https://facebook.com"><i
-                                    class="fab fa-facebook-f"></i></a> <a href="https://twitter.com"><i
-                                    class="fab fa-twitter"></i></a>
+                                    class="fab fa-facebook-f"></i></a> <a href="https://www.instagram.com/lashestrina/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>

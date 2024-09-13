@@ -15,6 +15,8 @@ import { BookingComponent } from './components/booking/booking.component';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { LoginComponent } from './components/login/login.component';
 import { PocketAuthService } from './services/auth-pocketbase.service';
+import { AboutComponent } from './components/about/about.component';
+import { DetailServiceComponent } from './components/detail-service/detail-service.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -27,7 +29,9 @@ import { PocketAuthService } from './services/auth-pocketbase.service';
     FooterComponent,
     HeaderComponent,
     BookingComponent,
-    LoginComponent
+    LoginComponent,
+    AboutComponent,
+    DetailServiceComponent
   
 
 ],
@@ -45,13 +49,28 @@ export class AppComponent {
     if (isPlatformBrowser(this.platformId)) {
       this.scriptLoader
         .loadScripts([
-          'assets/js/bootstrap.min.js',
+         /*  'assets/js/bootstrap.min.js',
           'assets/js/jquery.min.js',
           'assets/js/swiper-bundle.min.js',
           'assets/js/carousel.js',
           'assets/js/init.js',
           'assets/js/main.js',
-          'assets/js/multiple-modal.js',
+          'assets/js/multiple-modal.js', */
+          'assets/js/vendor/jquery-3.7.1.min.js',
+          'assets/js/slick.min.js',
+          'assets/js/bootstrap.min.js',
+          'assets/js/jquery.magnific-popup.min.js',
+          'assets/js/jquery-ui.min.js',
+          'assets/js/imagesloaded.pkgd.min.js',
+          'assets/js/isotope.pkgd.min.js',
+          'assets/js/jquery.flipster.min.js',
+          'assets/js/odometer.js',
+          'assets/js/appear-2.js',
+          'assets/js/nice-select.min.js',
+          'assets/js/jquery.datetimepicker.min.js',
+          'assets/js/tilt.min.js',
+          'assets/js/wow.min.js',
+          'assets/js/main.js'
         ])
         .then((data) => {
           console.log('Todos los scripts se han cargado correctamente', data);
